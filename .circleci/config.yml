@@ -8,7 +8,7 @@ jobs:
     steps:
       - checkout
       - qodana/scan:
-          args: -e,QODANA_REMOTE_URL=$CIRCLE_REPOSITORY_URL
+          args: -e QODANA_REMOTE_URL=$CIRCLE_REPOSITORY_URL
 workflows:
   main:
     jobs:
