@@ -7,10 +7,10 @@ jobs:
       image: 'ubuntu-2004:current'
     steps:
       - checkout
-      - qodana/scan
+      - qodana/scan:
+          args: -e,QODANA_REMOTE_URL=$CIRCLE_REPOSITORY_URL
 workflows:
   main:
     jobs:
       - code-quality:
           context: qodana
-
