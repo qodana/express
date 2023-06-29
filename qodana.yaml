@@ -4,5 +4,5 @@ bootstrap: |
   yarn install
   npm run test-ci
   mkdir -p /data/coverage
-  mv coverage/lcomv.info /data/coverage
+  mv coverage/lcov.info /data/coverage
   rm -rf coverage
