@@ -6,3 +6,5 @@ bootstrap: |
   mkdir -p /data/coverage
   mv coverage/lcov.info /data/coverage
   rm -rf coverage
+include:
+  - name: JsCoverageInspection
