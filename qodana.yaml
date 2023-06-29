@@ -1,4 +1,5 @@
 version: 1.0
-linter: jetbrains/qodana-js:2023.1-eap
+linter: registry.jetbrains.team/p/sa/containers/qodana-js:latest
 bootstrap: |
   yarn install
+  npm run test-ci
