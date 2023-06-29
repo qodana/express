@@ -20,5 +20,5 @@ jobs:
         uses: JetBrains/qodana-action@main
         with:
           args: |
-            -v, $(pwd)/coverage:/data/coverage/
+            -v, $GITHUB_WORKSPACE/coverage:/data/coverage/
 
