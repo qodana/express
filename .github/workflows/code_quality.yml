@@ -18,3 +18,5 @@ jobs:
           password: ${{ secrets.SPACE_REGISTRY_PASSWORD }}
       - name: 'Qodana Scan'
         uses: JetBrains/qodana-action@main
+        with:
+          upload-result: true
