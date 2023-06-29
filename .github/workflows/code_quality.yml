@@ -4,7 +4,6 @@ on:
   pull_request:
   push:
 
-
 jobs:
   qodana:
     runs-on: ubuntu-latest
@@ -19,3 +18,7 @@ jobs:
           password: ${{ secrets.PASSWORD }}
       - name: 'Qodana Scan'
         uses: JetBrains/qodana-action@main
+        with:
+          args: |
+            -v, $(pwd)/coverage:/data/coverage/
+
