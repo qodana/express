@@ -1,7 +1,7 @@
 version: 1.0
-linter: jetbrains/qodana-js:2023.2
+linter: jetbrains/qodana-js:2024.3
 bootstrap: |
-  yarn install
+  npm i
   npm run test-ci
   mkdir -p /data/coverage
   mv coverage/lcov.info /data/coverage
